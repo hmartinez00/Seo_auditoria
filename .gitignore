@@ -1,0 +1,8 @@
+backups
+index/*.html
+outputs/*.xlsx
+reports/*.txt
+keywords.xlsx
+urls.txt
+*.pyc
+__pycache__/
