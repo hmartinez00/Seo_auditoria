@@ -93,3 +93,25 @@ python keyword_auditor.py
   * **Manejo de Duplicados:** El script `keyword_auditor.py` elimina duplicados de la lista de palabras clave para un análisis más limpio.
 
 <!-- end list -->
+
+## 💡 Valoración de negocios según Google My Business
+
+El indicador más común y aceptado que combina la **calificación de estrellas** y el **número de reseñas (reviews)** para medir la calidad y la credibilidad es el concepto de **Valoración Ponderada** o **Credibilidad de la Calificación**.
+
+Aunque no existe una única "fórmula oficial" estandarizada por Google que se haga pública para este fin, la forma más lógica y utilizada para crear un indicador propio para tu lista es aplicando una **ponderación** a la calificación de estrellas basada en el volumen de reseñas.
+
+### 📝 Propuesta de Indicador (Fórmula Sugerida)
+
+Una forma efectiva de combinar ambos parámetros es utilizando una fórmula que favorezca las calificaciones altas *respaldadas por un gran número de reseñas*.
+
+Un indicador muy simple y funcional que puedes calcular para cada negocio es el **Puntaje de Confianza de la Reseña (PCR)**.
+
+$$
+\text{PCR} = \text{Calificación de Estrellas} \times \left(1 - \frac{1}{\text{Número Total de Reseñas} + K}\right)
+$$
+
+Donde:
+
+* **Calificación de Estrellas:** El promedio de estrellas del negocio (ej. 4.5).
+* **Número Total de Reseñas:** El conteo de reseñas.
+* **$K$ (Constante de Amortiguación):** Es un número que decides para darle un "impulso" inicial a los negocios, o para establecer un umbral de confianza mínimo. Un valor común podría ser **$K=5$** o **$K=10$**.
