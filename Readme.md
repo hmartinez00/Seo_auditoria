@@ -94,7 +94,7 @@ python keyword_auditor.py
 
 <!-- end list -->
 
-## 💡 Valoración de negocios según Google My Business
+## 💡 Valoración ponderada para negocios según Google My Business
 
 El indicador más común y aceptado que combina la **calificación de estrellas** y el **número de reseñas (reviews)** para medir la calidad y la credibilidad es el concepto de **Valoración Ponderada** o **Credibilidad de la Calificación**.
 
