@@ -93,5 +93,3 @@ python keyword_auditor.py
   * **Manejo de Duplicados:** El script `keyword_auditor.py` elimina duplicados de la lista de palabras clave para un análisis más limpio.
 
 <!-- end list -->
-
-```
